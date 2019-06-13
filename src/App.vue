@@ -1,18 +1,18 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="content">
+    <img src="logo.png"/>
+    <Dropdown @click="window.herf='_blank'"></Dropdown>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import DropDown from './components/Dropdown.vue'
 
 @Component({
   components: {
-    HelloWorld,
-  },
+    DropDown
+  }
 })
 export default class App extends Vue {}
 </script>
